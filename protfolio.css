@@ -617,38 +617,50 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
+    padding: 35px 50px; /* Increased padding slightly for better inner breathing room */
     width: 100%;
     max-width: 1000px;
-    gap: 25px;
+    gap: 40px; /* Increased gap to keep text and image cleanly separated */
     margin-top: 2rem;
-    margin-left: auto;       /* Standard block centering practice */
-    margin-right: auto;      /* Standard block centering practice */
-}
-
-.edu-box {
-    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .edu-box h2,
 .edu-box h3,
-.edu-box h4 {
-    margin-bottom: 20px;
+.edu-box h4,
+.edu-box h5 {
     color: #31442C;
-    text-align: left;        /* Keeps the text neat inside the box while the box itself is centered */
+    text-align: left;
+    margin: 0;
 }
 
 .edu-box h2 {
-    font-size: 28px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px; /* Tighter, cleaner spacing between headers */
 }
 
 .edu-box h3 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: capitalize; /* Ensures title case style */
 }
 
 .edu-box h4 {
-    font-size: 18px;
-} 
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #444444; /* Muted dark color for description readability */
+}
+
+.edu-box h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #778273; /* Uses your theme's accent color for the date block */
+}
 
 .imgd img {
     width: 350px;
