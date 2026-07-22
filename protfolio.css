@@ -302,12 +302,7 @@ section {
         font-size: medium;
     }
 
-    /* Hide the checkbox completely */
-    .menu-toggle {
-        display: none;
-    }
-
-    /* Style the burger button container */
+    /* Reset button styles for the burger label to function natively on touch devices */
     .burger-label {
         display: flex;
         flex-direction: column;
@@ -316,6 +311,10 @@ section {
         height: 18px;
         cursor: pointer;
         z-index: 1001;
+        background: transparent;
+        border: none;
+        padding: 0;
+        outline: none;
     }
 
     /* The 3 lines of the burger menu icon */
@@ -329,8 +328,8 @@ section {
     }
 
     /* Standardizes hidden state navigation layout */
-     nav {
-        display: none; 
+    nav {
+        display: none; /* Hidden by default */
         flex-direction: column;
         width: 100%;
         background-color: #e9ede4; 
@@ -346,26 +345,26 @@ section {
     nav a {
         font-size: 14px;
         margin: 0;
-        padding: 0.5rem 0;
+        padding: 0.7rem 0; /* Larger touch targets for mobile thumbs */
         width: 100%;
         display: block;
         color: #31442C;
+        text-decoration: none;
     }
 
-    /* === THE MAGIC INTERACTION LINK === */
-    /* When checkbox is checked, make nav menu box slide display block/flex */
-    .menu-toggle:checked ~ nav {
+    /* JavaScript toggles this class on click */
+    nav.active {
         display: flex;
     }
 
-    /* Optional smooth line morph transformations when open */
-    .menu-toggle:checked + .burger-label span:nth-child(1) {
+    /* Optional: Morph the hamburger lines into an 'X' when open */
+    .burger-label.active span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .menu-toggle:checked + .burger-label span:nth-child(2) {
+    .burger-label.active span:nth-child(2) {
         opacity: 0;
     }
-    .menu-toggle:checked + .burger-label span:nth-child(3) {
+    .burger-label.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -464,6 +463,7 @@ section {
         background-color: #31442C;
         transform: translateY(-2px);
     }
+
     .education {
         padding: 0 4%;
     }
@@ -544,9 +544,6 @@ section {
     .cotnactbox {
         width: 100%;
         padding: 1.5rem 1.2rem;
-    }
-    nav.active {
-        display: flex;
     }
 }
 
