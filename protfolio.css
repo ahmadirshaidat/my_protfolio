@@ -1,0 +1,1042 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#EFF4E8, #dfe3d9);
+}
+
+header {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(122, 111, 111);
+    background-color: #dfe3d9;
+}
+
+.logo {
+    color: #31442C;
+    font-size: large;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #A2B29C;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav a {
+    font-size: large;
+    margin-left: 3rem;
+    color: #000000;
+    border-bottom: 1px solid transparent #A2B29C;
+}
+
+nav a:hover,
+nav a.active {
+    color: #A2B29C;
+    border-bottom: 1px solid #A2B29C;
+}
+
+section {
+    min-height: 70vh;
+    padding: 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding-top: 8rem;
+    height: 30%;
+}
+
+.home-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px #778373;
+}
+
+.home-content h1 {
+    color: #31442C;
+}
+
+.home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 500px;
+}
+
+.home-content h1,
+.home-content h3,
+.home-content p {
+    width: 100%;
+    text-align: left;
+}
+
+.home-content h3 {
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    margin-bottom: 1rem;
+}
+
+.home-content button {
+    color: white;
+    background-color: #A2B29C;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px ;
+    margin: 6px 0;
+    width: 250px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.btn .download:hover {
+    background-color: #31442C;
+}
+
+.btn .contact:hover {
+    background-color: #31442C;
+}
+
+@media (max-width: 920px) {
+    header{
+        padding: 1rem 4%;
+    }
+    nav{
+        gap: 1.2rem;
+    }
+    nav a{
+        font-size: 16px;
+        margin-left: 1.5rem;
+    }
+ 
+    section{
+        padding: 4rem 4%;
+    }
+ 
+    .home{
+        gap: 3rem;
+        padding-top: 6rem;
+    }
+    .home-img img{
+        width: 280px;
+        height: 280px;
+    }
+    .home-content{
+        max-width: 380px;
+    }
+    .home-content h1{
+        font-size: 1.8rem;
+    }
+    .home-content h3{
+        font-size: 1rem;
+    }
+    .home-content p{
+        font-size: 0.9rem;
+    }
+    .home-content button{
+        width: 200px;
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+ 
+    .about{
+        padding: 0 6%;
+        font-size: 16px;
+    }
+    .about h2{
+        font-size: 1.6rem;
+    }
+    .about p{
+        font-size: 1.3rem;
+    }
+    .icon .icon-link{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 4rem;
+    }
+    
+ 
+    .education{
+        padding: 0 6%;
+        font-size: 16px;
+    }
+    .box{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .edu-box{
+        flex: 1;
+        min-width: 0;
+    }
+    .edu-box h2{
+        font-size: 20px;
+    }
+    .edu-box h3{
+        font-size: 16px;
+    }
+    .edu-box h4{
+        font-size: 14px;
+    }
+    .imgd{
+        flex: 0 0 auto;
+    }
+    .imgd img{
+        width: 150px;
+        max-width: 40%;
+        height: 120px;
+    }
+ 
+    .experience{
+        gap: 1.5rem;
+        padding: 3rem 5%;
+    }
+    .exp1,
+    .exp2{
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .exp1img img,
+    .exp2img img{
+        width: 70px;
+        height: 70px;
+    }
+    .exp1text h2,
+    .exp2text h2{
+        font-size: 20px;
+    }
+    .exp1text h3,
+    .exp2text h3{
+        font-size: 16px;
+    }
+    .exp1text h4,
+    .exp2text h4{
+        font-size: 14px;
+    }
+ 
+    .project{
+        padding: 3rem 1.5rem;
+    }
+    .project h2{
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+    }
+    .project-container{
+        gap: 0.8rem;
+    }
+    .pro-card{
+        padding: 1.8rem 1.4rem;
+    }
+    .pro-card h3{
+        font-size: 1.1rem;
+    }
+    .pro-card h4{
+        font-size: 0.85rem;
+    }
+    .pro-card p{
+        font-size: 0.85rem;
+    }
+ 
+    .skills-box{
+        padding: 25px 30px;
+        width: 100%;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .skill-name{
+        font-size: 16px;
+    }
+ 
+    .cotnactbox{
+        padding: 2rem 2.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        position: relative;
+        flex-direction: row; /* Keeps logo and burger icon side-by-side */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 4%;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: medium;
+    }
+
+    /* Hide the checkbox completely */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Style the burger button container */
+    .burger-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* The 3 lines of the burger menu icon */
+    .burger-label span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #31442C; /* Matches your profile theme color */
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Standardizes hidden state navigation layout */
+    nav {
+        display: none; /* Hidden by default on mobile screens */
+        flex-direction: column;
+        width: 100%;
+        background-color: #e9ede4; /* Clean background matching your boxes */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0;
+        padding: 0.5rem 0;
+        width: 100%;
+        display: block;
+        color: #31442C;
+    }
+
+    /* === THE MAGIC INTERACTION LINK === */
+    /* When checkbox is checked, make nav menu box slide display block/flex */
+    .menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    /* Optional smooth line morph transformations when open */
+    .menu-toggle:checked + .burger-label span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle:checked + .burger-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle:checked + .burger-label span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* ==========================================
+       YOUR REST OF THE UNCHANGED LAYOUT FIXES
+       ========================================== */
+    section {
+        padding: 8rem 5% 3rem;
+    }
+ 
+    .home {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding-top: 5.5rem;
+    }
+    .home-img {
+        justify-content: center;
+    }
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .home-content {
+        max-width: 100%;
+        align-items: center;
+        flex: none;
+    }
+    .home-content h1,
+    .home-content h3,
+    .home-content p {
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 1.6rem;
+    }
+    .btn {
+        align-items: center;
+    }
+ 
+    .about {
+        padding: 4rem 1.5rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        color: #31442C;
+        margin-bottom: 1.5rem;
+    }
+
+    .about p {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto 2.5rem;
+        line-height: 1.7;
+        font-size: 15px;
+        color: #31442C;
+    }
+
+    .about .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    .about .icon .icon-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #A2B29C;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        margin-bottom: 0;
+    }
+
+    .about .icon .icon-link i {
+        font-size: 20px !important;
+        line-height: 1;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about .icon .icon-link:hover {
+        background-color: #31442C;
+        transform: translateY(-2px);
+    }
+    .education {
+        padding: 0 4%;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 15px;
+    }
+    .edu-box {
+        flex: none;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .edu-box h2,
+    .edu-box h3,
+    .edu-box h4 {
+        text-align: center;
+    }
+    .imgd {
+        flex: none;
+        width: 100%;
+    }
+    .imgd img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+ 
+    .experience {
+        padding: 2.5rem 5%;
+        gap: 1.2rem;
+    }
+    .exp1,
+    .exp2 {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+ 
+    .project {
+        padding: 2.5rem 1.2rem;
+    }
+    .project h2 {
+        margin-bottom: 2rem;
+    }
+    .project-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pro-card {
+        flex: 1 1 45%;
+        min-width: 130px;
+        padding: 1.2rem 0.8rem;
+    }
+    .pro-card h3 {
+        font-size: 0.95rem;
+    }
+    .pro-card h4 {
+        font-size: 0.75rem;
+    }
+    .pro-card p {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+ 
+    .skills-box {
+        padding: 20px 18px;
+        width: 100%;
+        margin: 0 auto;
+    }
+ 
+    .cotnactbox {
+        width: 100%;
+        padding: 1.5rem 1.2rem;
+    }
+}
+
+
+
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: .2rem;
+    align-items: center;
+
+    font-size: 20px;
+    min-height: auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #31442C;
+    margin-bottom: 20px;
+}
+
+.about p {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 70%;
+    margin-bottom: .5rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 2rem;
+}
+
+.icon .icon-link {
+    width: 50px;
+    height: 50px;
+    background-color: #A2B29C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e261c;
+    margin-bottom: 2rem;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers items vertically if there is extra height */
+    align-items: center;     /* Changed from baseline to center your layout horizontally */
+    padding: 0 10%;
+    width: 100%;
+    min-height: auto;
+}
+
+.education .na {
+    font-size: 2rem;
+    margin-bottom: .25rem;
+    color: #31442C;
+    text-align: center;      /* Ensures the section header text is centered */
+}
+
+.box {
+    background-color: #dfe3d9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    width: 100%;
+    max-width: 1000px;
+    gap: 25px;
+    margin-top: 2rem;
+    margin-left: auto;       /* Standard block centering practice */
+    margin-right: auto;      /* Standard block centering practice */
+}
+
+.edu-box {
+    flex: 1;
+}
+
+.edu-box h2,
+.edu-box h3,
+.edu-box h4 {
+    margin-bottom: 20px;
+    color: #31442C;
+    text-align: left;        /* Keeps the text neat inside the box while the box itself is centered */
+}
+
+.edu-box h2 {
+    font-size: 28px;
+}
+
+.edu-box h3 {
+    font-size: 20px;
+}
+
+.edu-box h4 {
+    font-size: 18px;
+} 
+
+.imgd img {
+    width: 350px;
+    max-width: 400px;        /* Cleaned up the duplicate max-width rule */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;          /* Better layout handling for centering inside structural containers */
+}
+
+/* Mobile Responsive Center Fix */
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column-reverse; /* Stacks image above or below text on small screens */
+        text-align: center;
+        padding: 25px;
+    }
+    .edu-box h2, .edu-box h3, .edu-box h4 {
+        text-align: center;  /* Centers text fully when viewing on mobile screens */
+    }
+    .imgd img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.experience {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 2.5rem;          
+    padding: 5rem 10%;
+    width: 100%;
+}
+
+.experience h2 {
+    width: 100%;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #31442C;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.exp1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+    background-color: #f8ffef;
+    border-radius: 12px;
+    padding: 10px 30px;
+    flex: 1;
+    max-width: 500px;
+}
+
+
+.exp1img img {
+    width: 100px;
+    border-radius: 50%;
+    max-width: 400px;
+    height: 100px;
+    margin: 5px;
+}
+
+.exp1text {
+    padding: 12px;
+    color: #31442C;
+    justify-content: space-between;
+}
+
+.exp1text h2 {
+    font-size: 28px;
+}
+
+.exp1text h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.exp1text h4 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.exp1:hover {
+    background-color: #dfe3d9;
+}
+
+.exp2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+    background-color: #f8ffef;
+    border-radius: 12px;
+    padding: 10px 30px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.exp2img img {
+    width: 100px;
+    border-radius: 50%;
+    max-width: 400px;
+    height: 100px;
+    margin: 5px;
+}
+
+.exp2text {
+    padding: 12px;
+    color: #31442C;
+    justify-content: space-between;
+}
+
+.exp2text h2 {
+    font-size: 28px;
+}
+
+.exp2text h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.exp2text h4 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.exp2:hover {
+    background-color: #dfe3d9;
+}
+
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    width: 100%;
+    min-height: auto;
+}
+
+.project h2{
+    font-size: 2rem;
+    color: #31442C;
+    margin-bottom: 6rem;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    max-width: 980px;
+}
+
+.pro-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #e9ede4;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    flex: 1;
+}
+
+.pro-card h3 {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.pro-card h4 {
+    font-size: 0.95rem;
+    color: #444444;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.pro-card p {
+    font-size: 0.95rem;
+    color: #111111;
+    line-height:normal;
+    margin-bottom: 2rem;
+}
+
+button{
+    border: none;
+    color:white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.gitproject{
+    padding: 10px 15px;
+    
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #A2B29C;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.gitproject:hover{
+    background-color: #dfe3d9;
+}
+
+
+
+.skills h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #31442C;
+}
+
+/* Updated main wrapper to act as a structured grid container */
+.skills-box {
+    background-color: #e9ede4;
+    border-radius: 16px;
+    display: grid;
+    /* Creates distinct columns that fit perfectly within your 960px bounds */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 40px 50px;
+    width: 960px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 40px; /* Enhanced spacing between sub-categories */
+}
+
+.skills-category {
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 1px solid rgba(119, 130, 115, 0.2);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left; 
+}
+
+/* Grouped card headings */
+.skills-category h3 {
+    font-size: 18px;
+    color: #31442C;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Inner skill items container */
+.progress-bar-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+/* Individual skill sub-tags - Now updated to #A2B29C */
+.skill-tag {
+    background-color: #A2B29C;
+    border: 1px solid rgba(119, 130, 115, 0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect matches the light tint style of your .gitproject buttons */
+.skill-tag:hover {
+    background-color: #dfe3d9;
+    transform: translateY(-1px);
+}
+
+/* Text color changed to white for perfect readability on the green background */
+.skill-name {
+    font-size: 16px;
+    color: #ffffff; 
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* When hovering the tag, change the text color to your dark green theme color */
+.skill-tag:hover .skill-name {
+    color: #31442C;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    min-height: auto;
+    width: 100%;
+    background-color: #A2B29C;
+}
+
+.contact h2{
+    font-size: 30px;
+    color: #444444;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.cotnactbox{
+    background-color: #e9ede4;
+    border-radius: 10px;
+    padding: 3rem 4rem;
+    width: 500px;
+    max-width: 80%;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.inputs label{
+    color: #31442C;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    border-bottom: 1px solid #31442C;
+}
+
+.row i{
+    margin-right: 1rem;
+    text-align: center;
+}
+.row input{
+    width: 100%;
+    border: none;
+    background-color: #e9ede4;
+}
+
+.iconcontact{
+    display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        justify-content: center;
+        align-items: center;
+}
+
+.iconfooter{
+    width: 40px;
+    height: 40px;
+    background-color: #A2B29C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.iconfooter:hover{
+    background-color: #dfe3d9;
+
+}
