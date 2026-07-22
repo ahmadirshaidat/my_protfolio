@@ -291,7 +291,7 @@ section {
 @media (max-width: 600px) {
     header {
         position: relative;
-        flex-direction: row; /* Keeps logo and burger icon side-by-side */
+        flex-direction: row; 
         justify-content: space-between;
         align-items: center;
         padding: 0.7rem 4%;
@@ -323,17 +323,17 @@ section {
         display: block;
         height: 2px;
         width: 100%;
-        background-color: #31442C; /* Matches your profile theme color */
+        background-color: #31442C;
         border-radius: 2px;
         transition: all 0.3s ease-in-out;
     }
 
     /* Standardizes hidden state navigation layout */
-    nav {
-        display: none; /* Hidden by default on mobile screens */
+     nav {
+        display: none; 
         flex-direction: column;
         width: 100%;
-        background-color: #e9ede4; /* Clean background matching your boxes */
+        background-color: #e9ede4; 
         position: absolute;
         top: 100%;
         left: 0;
@@ -544,6 +544,9 @@ section {
     .cotnactbox {
         width: 100%;
         padding: 1.5rem 1.2rem;
+    }
+    nav.active {
+        display: flex;
     }
 }
 

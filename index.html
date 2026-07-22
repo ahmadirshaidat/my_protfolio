@@ -13,10 +13,8 @@
     <header>
         <a href="#" class="logo">AM</a>
         
-       
-
-        <!-- 2. The 3 span layers that render your physical burger menu icon bars -->
-        <label for="menu-toggle" class="burger-label">
+        <!-- The burger label with an inline JavaScript toggle trigger -->
+        <label class="burger-label" onclick="document.querySelector('nav').classList.toggle('active')">
             <span></span>
             <span></span>
             <span></span>
@@ -31,6 +29,7 @@
             <a href="#contact">contact</a>
          </nav>
     </header>
+
 
     <section class="home" id="home">
         <div class="home-img">
